@@ -129,6 +129,43 @@ public class RegisterStepDef extends BaseClass {
 	public void user_should_get_a_password_mismatch_error_message(String string) throws Exception {
 		Assert.assertEquals(registerPage.validationPwdMismatch(), "Please fill out this field.");
 	}
+	@When("user enters {string} {string} {string} password less than eight characters")
+	public void user_enters_password_less_than_eight_characters(String userName, String password, String password2) throws Exception {
+		registerPage.sendUsernameText(userName);
+    registerPage.sendPasswordText1(password);
+	    registerPage.sendPasswordText2(password2);
+	    registerPage.clickRegisterButton();
+	}
+	@Then("user should get password atleast eight char error message {string}")
+	public void user_should_get_password_atleast_eight_char_error_message(String string) throws Exception{
+	    // Write code here that turns the phrase above into concrete actions
+	   Assert.assertEquals(registerPage.validatepwd(), "password should contain atleast eight characters.");
+		
+	}
+
+
+	@When("user enters {string} {string} {string} password with all numeric input")
+	public void user_enters_password_with_all_numeric_input(String userName, String password, String password2)  throws Exception {
+	    registerPage.sendUsernameText(userName);
+	    registerPage.sendPasswordText1(password);
+	    registerPage.sendPasswordText2(password2);
+	    registerPage.clickRegisterButton();
+	}
+	@Then("user should get enter valid input error message {string}")
+	public void user_should_get_enter_valid_input_error_message(String string)  throws Exception {
+		Assert.assertEquals(registerPage.validationPwdMismatch(), "please input valid format");
+	}
+	@When("user enters the {string} {string} {string} all similar to one another")
+	public void user_enters_the_all_similar_to_one_another(String userName, String password, String password2) throws Exception { 
+	    registerPage.sendUsernameText(userName);
+	    registerPage.sendPasswordText1(password);
+	    registerPage.sendPasswordText2(password2);
+	    registerPage.clickRegisterButton();
+	}
+	@Then("user should get password not similar to username error message {string}")
+	public void user_should_get_password_not_similar_to_username_error_message(String string) throws Exception {
+		Assert.assertEquals(registerPage.validatecompare(), "password can not be similar as username");
+	}
 }
 
 
