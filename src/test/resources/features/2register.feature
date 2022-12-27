@@ -1,4 +1,3 @@
-
 Feature: Register
 
   Background: 
@@ -64,7 +63,7 @@ Scenario Outline: Register validation with invalid inputs/blank fields
     Examples: 
       | username        | password  | passwordConfirmation |
       |                 |           | abc@123              |
-@register
+
   Scenario Outline: Register validation with invalid inputs/ password mismatch
     When user enters "<username>" "<password>" "<passwordConfirmation>" with mismatching passwords
     Then user should get a password mismatch error message "password_mismatch:The two password fields didn’t match."

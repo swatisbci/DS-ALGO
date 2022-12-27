@@ -68,6 +68,11 @@ public class LoginPage {
 		 String text = successfulLoginMsg.getText();
 			return text;
 		    }
+	 public void clickLogInBtn() throws InterruptedException {
+		 Thread.sleep(2000);
+		 Utils.webClick(logInBtn);
+		 
+	 }
 	 
 	 
 	

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="7" failed="13" skipped="0">
+<testng-results ignored="0" total="21" passed="8" failed="13" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-24T12:11:04 EST" name="Default suite" finished-at="2022-12-24T12:13:43 EST" duration-ms="158216">
+  <suite started-at="2022-12-27T09:53:45 EST" name="Default suite" finished-at="2022-12-27T09:56:47 EST" duration-ms="181877">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-12-24T12:11:04 EST" name="Default test" finished-at="2022-12-24T12:13:43 EST" duration-ms="158216">
+    <test started-at="2022-12-27T09:53:45 EST" name="Default test" finished-at="2022-12-27T09:56:47 EST" duration-ms="181877">
       <class name="com.runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:11:04 EST" name="setUpClass" finished-at="2022-12-24T12:11:06 EST" duration-ms="1327" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:53:45 EST" name="setUpClass" finished-at="2022-12-27T09:53:47 EST" duration-ms="1200" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3b770d07]]>
+                <![CDATA[org.testng.TestRunner@7f030c72]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:11:06 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:11:20 EST" duration-ms="14471" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:53:47 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:53:59 EST" duration-ms="12784" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:11:20 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:11:36 EST" duration-ms="15516" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:53:59 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:54:14 EST" duration-ms="14880" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -63,14 +63,14 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:976)
 at org.testng.Assert.assertEquals(Assert.java:1010)
 at com.stepDefinations.RegisterStepDef.user_should_be_successfully_able_to_see_the_label_as(RegisterStepDef.java:46)
-at ✽.user should be successfully able to see the label as "New Account Created."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:13)
+at ✽.user should be successfully able to see the label as "New Account Created."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:12)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:11:36 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:11:50 EST" duration-ms="14498" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:54:14 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:54:29 EST" duration-ms="14409" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -96,14 +96,14 @@ at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:976)
 at org.testng.Assert.assertEquals(Assert.java:1010)
 at com.stepDefinations.RegisterStepDef.user_should_be_successfully_able_to_see_the_label_as(RegisterStepDef.java:46)
-at ✽.user should be successfully able to see the label as "New Account Created."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:13)
+at ✽.user should be successfully able to see the label as "New Account Created."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:12)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:11:50 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:12:01 EST" duration-ms="10413" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:54:29 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:54:36 EST" duration-ms="7634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@ at ✽.user should be successfully able to see the label as "New Account Created
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:12:01 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:12:13 EST" duration-ms="12630" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:54:36 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:54:46 EST" duration-ms="9541" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@ at ✽.user should be successfully able to see the label as "New Account Created
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:12:13 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:12:28 EST" duration-ms="15019" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:54:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:54:57 EST" duration-ms="11624" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,7 +151,7 @@ at ✽.user should be successfully able to see the label as "New Account Created
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:12:28 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:12:43 EST" duration-ms="15018" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:54:57 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:55:10 EST" duration-ms="12067" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@ at ✽.user should be successfully able to see the label as "New Account Created
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:12:43 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:12:56 EST" duration-ms="12542" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:55:10 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:55:19 EST" duration-ms="9952" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,7 +183,7 @@ at ✽.user should be successfully able to see the label as "New Account Created
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:12:56 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:09 EST" duration-ms="12786" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:55:19 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:55:29 EST" duration-ms="9826" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,7 +199,7 @@ at ✽.user should be successfully able to see the label as "New Account Created
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:09 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:26 EST" duration-ms="17336" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:55:29 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:55:43 EST" duration-ms="14095" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -220,10 +220,10 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7be0f9acfedc1324456869915f33cdaf, getElementText {id=fe06a1a8-86f7-4893-a1f5-791f84d05ad2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57780}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57780/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7be0f9acfedc1324456869915f33cdaf)] -> id: id_password1]
-Session ID: 7be0f9acfedc1324456869915f33cdaf]]>
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=16e46527-5952-43bf-9aad-3da8764e638d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_password1]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
@@ -232,10 +232,10 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7be0f9acfedc1324456869915f33cdaf, getElementText {id=fe06a1a8-86f7-4893-a1f5-791f84d05ad2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57780}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57780/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7be0f9acfedc1324456869915f33cdaf)] -> id: id_password1]
-Session ID: 7be0f9acfedc1324456869915f33cdaf
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=16e46527-5952-43bf-9aad-3da8764e638d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_password1]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -252,20 +252,20 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-at com.pageObjects.RegisterPage.validationPwdMismatch(RegisterPage.java:125)
+at com.pageObjects.RegisterPage.validationPwdMismatch(RegisterPage.java:126)
 at com.stepDefinations.RegisterStepDef.user_should_get_a_password_mismatch_error_message(RegisterStepDef.java:130)
-at ✽.user should get a password mismatch error message "password_mismatch:The two password fields didn’t match."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:70)
+at ✽.user should get a password mismatch error message "password_mismatch:The two password fields didn’t match."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:69)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:26 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:31 EST" duration-ms="5131" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:55:43 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:55:58 EST" duration-ms="14243" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Register validation with invalid inputs/ password format less than 8 characters"]]>
+                <![CDATA["Register validation with invalid inputs/ password format less than eight characters"]]>
               </value>
             </param>
             <param index="1">
@@ -274,79 +274,56 @@ at ✽.user should get a password mismatch error message "password_mismatch:The 
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[The step 'user enters "swati@gmail.com" "abcde" "abcde" password less than eight characters' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("user enters {string} {string} {string} password less than eight characters")
-public void user_enters_password_less_than_eight_characters(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should get password atleast {int} char error message {string}")
-public void user_should_get_password_atleast_char_error_message(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=b1d07f66-96f5-498f-a6e4-7e05acac0c90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_password1]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters "swati@gmail.com" "abcde" "abcde" password less than eight characters' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("user enters {string} {string} {string} password less than eight characters")
-public void user_enters_password_less_than_eight_characters(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should get password atleast {int} char error message {string}")
-public void user_should_get_password_atleast_char_error_message(Integer int1, String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=b1d07f66-96f5-498f-a6e4-7e05acac0c90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_password1]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+at com.pageObjects.RegisterPage.validatepwd(RegisterPage.java:138)
+at com.stepDefinations.RegisterStepDef.user_should_get_password_atleast_eight_char_error_message(RegisterStepDef.java:143)
+at ✽.user should get password atleast eight char error message "password should contain atleast eight characters."(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:31 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:36 EST" duration-ms="4932" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:55:58 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:12 EST" duration-ms="14393" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -359,79 +336,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[The step 'user enters "swati@gmail.com" "12345" "12345" password with all numeric input' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("user enters {string} {string} {string} password with all numeric input")
-public void user_enters_password_with_all_numeric_input(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should get enter valid input error message {string}")
-public void user_should_get_enter_valid_input_error_message(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=ada257a5-38e3-47dc-bbfa-a71fd1a25881}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_password1]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters "swati@gmail.com" "12345" "12345" password with all numeric input' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("user enters {string} {string} {string} password with all numeric input")
-public void user_enters_password_with_all_numeric_input(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should get enter valid input error message {string}")
-public void user_should_get_enter_valid_input_error_message(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=ada257a5-38e3-47dc-bbfa-a71fd1a25881}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_password1]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+at com.pageObjects.RegisterPage.validatenumeric(RegisterPage.java:167)
+at com.stepDefinations.RegisterStepDef.user_should_get_enter_valid_input_error_message(RegisterStepDef.java:157)
+at ✽.user should get enter valid input error message "please enter valid password format"(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:85)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:36 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:41 EST" duration-ms="4955" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:12 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:26 EST" duration-ms="14350" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -444,79 +398,72 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[The step 'user enters the "swati@123" "swati@123" "swati@123" all similar to one another' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("user enters the {string} {string} {string} all similar to one another")
-public void user_enters_the_all_similar_to_one_another(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should get password not similar to username error message {string}")
-public void user_should_get_password_not_similar_to_username_error_message(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=d0ef762c-cac8-4631-a1c8-7829afe95bac}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_username]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'user enters the "swati@123" "swati@123" "swati@123" all similar to one another' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("user enters the {string} {string} {string} all similar to one another")
-public void user_enters_the_all_similar_to_one_another(String string, String string2, String string3) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("user should get password not similar to username error message {string}")
-public void user_should_get_password_not_similar_to_username_error_message(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adcfe2e7f9b2a46ba2f607fa3bea3205, getElementText {id=d0ef762c-cac8-4631-a1c8-7829afe95bac}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\chpra\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56299}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56299/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (adcfe2e7f9b2a46ba2f607fa3bea3205)] -> id: id_username]
+Session ID: adcfe2e7f9b2a46ba2f607fa3bea3205
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
+at com.pageObjects.RegisterPage.validatecompare(RegisterPage.java:154)
+at com.stepDefinations.RegisterStepDef.user_should_get_password_not_similar_to_username_error_message(RegisterStepDef.java:168)
+at ✽.user should get password not similar to username error message "password can not be similar as username"(file:///C:/Users/chpra/git/DS-ALGO/src/test/resources/features/2register.feature:93)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:41 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:41 EST" duration-ms="190" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:26 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:46 EST" duration-ms="19480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Data Structure Intro]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:46 EST" duration-ms="199" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -543,7 +490,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:41 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:42 EST" duration-ms="204" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:46 EST" duration-ms="146" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -570,7 +517,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:42 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:42 EST" duration-ms="171" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:46 EST" duration-ms="127" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -597,7 +544,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:42 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:42 EST" duration-ms="228" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:46 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:47 EST" duration-ms="268" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -624,7 +571,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:42 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:42 EST" duration-ms="184" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:47 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:47 EST" duration-ms="135" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -651,7 +598,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:42 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:42 EST" duration-ms="147" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:47 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:47 EST" duration-ms="126" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -678,7 +625,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:42 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-24T12:13:42 EST" duration-ms="161" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:47 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-27T09:56:47 EST" duration-ms="126" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -705,7 +652,7 @@ at ✽.user clicks on "Get started" button(file:///C:/Users/chpra/git/DS-ALGO/sr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-24T12:13:43 EST" name="tearDownClass" finished-at="2022-12-24T12:13:43 EST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runner.Runner@bcec361]" started-at="2022-12-27T09:56:47 EST" name="tearDownClass" finished-at="2022-12-27T09:56:47 EST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -102,26 +102,27 @@ public class RegisterPage {
 	}
 	
 	public String validationEmptyFields() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String mesg=usernameText.getAttribute("validationMessage");
 		System.out.println(mesg);
 		return mesg;
 	}
 	public String validationEmptyFieldspassword1() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String mesg=passwordText1.getAttribute("validationMessage");
 		System.out.println(mesg);
 		return mesg;
 	}
 	public String validationEmptyFieldspassword2() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String mesg=passwordText2.getAttribute("validationMessage");
 		System.out.println(mesg);
 		return mesg;
 	}
 	
 	public String validationPwdMismatch() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		
 		String pwd1=passwordText1.getText();
 		String pwd2=passwordText2.getText();
 		String msg = "";
@@ -130,11 +131,10 @@ public class RegisterPage {
 			
 		}
 		return msg;
-		
-		
 	}
+	
 	public String validatepwd() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String pwd1=passwordText1.getText();
 		int count = 0;
 		String msg = "";
@@ -149,7 +149,7 @@ public class RegisterPage {
 		return msg;
 	}
 	public String validatecompare() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		String msg = "";
 		String usr=usernameText.getText();
 		String pwd1=passwordText1.getText();
@@ -161,4 +161,20 @@ public class RegisterPage {
 		}
 		return msg;
 	}
-}
+	public String validatenumeric() throws InterruptedException {
+		//Thread.sleep(3000);
+		String msg = "";
+		String pwd1=passwordText1.getText();
+		 boolean a = (PasswordIsDigits(pwd1));
+	       if(a==true) {
+	    	   msg = passwordMismatch.getText();
+	       }
+		return msg;}
+
+		private static boolean PasswordIsDigits(String password) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+		
+	}
+	
