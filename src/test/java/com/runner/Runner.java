@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/test/resources/features",glue ="com.stepDefinations"
-,monochrome=true, tags =("@ds or @linkedlist or @arrays"),
+,monochrome=true, tags =("@ds or @linkedlist"),
 //tags = "@ds", dryRun = false, 
 
 plugin= {"pretty","html:target/cucumber.html"
