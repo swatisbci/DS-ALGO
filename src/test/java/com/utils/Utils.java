@@ -1,18 +1,24 @@
 package com.utils;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.stepDefinations.BaseClass;
-
 public class Utils {
+	static String Excelpath = ConfigReader.getexcelfilepath();
+	
 	public static int getRandomNum() {
 		Random random = new Random();
 		 return random.nextInt(100000);
@@ -100,8 +106,44 @@ public class Utils {
 		}
 		return false;
 	}
-	
 
+	public static boolean enterPythonCode(WebElement element, String code) {
+		Loggerload.info("Before sending keys to " + element.getText() );
+		new Actions(driver).sendKeys(element, code).perform();
+		return true;
+	}
+	
+	public static void enterCodePractice(WebElement element, WebElement answerForm, String code) {
+		Loggerload.info("Clearing text before entering code in "+element.getText()+" enterCodePractice");
+		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(answerForm));
+		new Actions(driver).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
+		String[] str1 = code.split("\n");
+		for (int i = 0; i < str1.length; i++) {
+			if (str1[i].equalsIgnoreCase("\\b")) {
+				element.sendKeys(Keys.BACK_SPACE);
+			} else {
+				element.sendKeys(str1[i]);
+				element.sendKeys(Keys.RETURN);
+			}
+		}
+//		element.sendKeys(code);
+	}
+	
+	public static String getResultfromExcel(String sheetname, int rownumber) throws InvalidFormatException, IOException {
+		ExcelReader reader = new ExcelReader();
+		List<Map<String, String>> testdata = reader.getData(Excelpath, sheetname);
+		String result = testdata.get(rownumber).get("Result");
+		Loggerload.info("Expected result from Excel sheetname " + sheetname + " and " + rownumber + " : " + result);
+		return result;
+	}
+	
+	public static String getCodefromExcel(String sheetname, int rownumber) throws InvalidFormatException, IOException {
+		ExcelReader reader = new ExcelReader();
+		List<Map<String, String>> testdata = reader.getData(Excelpath, sheetname);
+		String code = testdata.get(rownumber).get("pythonCode");
+		return code;
+	}
+	
 	public static boolean webSelect(WebElement element, String text) {
 		try {
 			WebElement ele = new WebDriverWait(driver, Duration.ofSeconds(10)).
@@ -133,7 +175,10 @@ public class Utils {
 		return false;
 	}
 
-	
+
+	public static void waitForElement(WebElement element) {
+		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));		
+	}
 }
 
 

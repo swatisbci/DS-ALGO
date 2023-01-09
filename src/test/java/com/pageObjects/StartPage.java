@@ -7,12 +7,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.stepDefinations.BaseClass;
+import com.utils.Loggerload;
 import com.utils.Utils;
 
 public class StartPage extends BaseClass {
 	
 	public StartPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
+		// Valli Change 
 	}
 	
 	@FindBy(xpath = "//button[text()='Get Started']")
@@ -39,42 +41,38 @@ public class StartPage extends BaseClass {
 	@CacheLookup
 	WebElement getStartedDSBtn;
 	
-	 public void clickGetStartedBtn() throws Exception {
+	public void clickGetStartedBtn() throws Exception {
 		 Thread.sleep(2000);
+		 Loggerload.info("click on getStartedPage "+getStartedBtn.getText()+" button");
 		 Utils.webClick(getStartedBtn);
-		    }
+    }
 	 
-	 public String validateHomePage() {
-		 String text = homePageTitle.getText();
-			return text;
-		    }
+	public String validateHomePage() {
+		Loggerload.info("click on getStartedPage "+homePageTitle.getText()+" button");
+		String text = homePageTitle.getText();
+		return text;
+    }
 	 
-	 public void dropDownClick() throws InterruptedException {
+	public void dropDownClick() throws InterruptedException {
 		 Thread.sleep(1000);
+		 Loggerload.info("click on getStartedPage "+dropDownLink.getText()+" button");
 		 Utils.webClick(dropDownLink); 
-		    }
+    }
 	 
-	 public void enterDropdownValue(String value) throws InterruptedException {
+	public void enterDropdownValue(String value) throws InterruptedException {
 		 Thread.sleep(1000);
+		 Loggerload.info("click on getStartedPage "+dropDownValue.getText()+" button");
 		 Utils.webSendKeys(dropDownValue, value);
 		 Utils.webClick(dropDownValue);
-		}
+	}
 	 
-	 public String displayErrorMsg() {
-		 String text = startPageErrorMsg.getText();
-			return text;
-		    }
+	public String displayErrorMsg() {
+		String text = startPageErrorMsg.getText();
+		return text;
+    }
 	 
-	 public void getStartedClick() throws InterruptedException {
+	public void getStartedClick() throws InterruptedException {
 		 Thread.sleep(2000);
-		Utils.webClick(getStartedBtn);
-		    
-	
-	
+		 Utils.webClick(getStartedBtn);
 	 }
-	
-
 }
-
-
-

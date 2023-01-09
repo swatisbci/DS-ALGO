@@ -1,10 +1,12 @@
 package com.pageObjects;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.utils.Loggerload;
 import com.utils.Utils;
 
 public class DS_IntroPage {
@@ -22,9 +24,6 @@ public class DS_IntroPage {
 	WebElement tryHereLink;
 	
 	@FindBy (xpath ="//form/div/div/div/textarea")
-	WebElement editor; 
-	
-	@FindBy (xpath ="//form/div/div/div/textarea")
 	WebElement textEditor; 
 	
 	@FindBy(xpath ="//button[text()='Run']")
@@ -32,27 +31,30 @@ public class DS_IntroPage {
 	
 	public void clickGetStartedDs() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ getStartedLinkDs.getText()+ " link");
 		Utils.webClick(getStartedLinkDs);
 	}
 	
 	public void clickTimeComplexityLink() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ timeComplexityLink.getText()+ " link");
 		Utils.webClick(timeComplexityLink);
 	}
 	
 	public void clickTryHereLink() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ tryHereLink.getText()+ " link");
 		Utils.webClick(tryHereLink);
 	}
 	
 	public void enterCode(String pythonCode) throws InterruptedException {
-		Thread.sleep(2000);
-		editor.sendKeys(pythonCode);
-		//editor.sendKeys(Keys.TAB, Keys.SHIFT, Keys.TAB,Keys.SHIFT, pythonCode);
+		Loggerload.info("Entering code on dsIntro "+ textEditor.getText()+ " text field");
+		Utils.enterPythonCode(textEditor, pythonCode);
 	} 
 	
 	public void clickRunBtn() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ runBtn.getText()+ " button");
 		Utils.webClick(runBtn);
 	}
 	
