@@ -14,7 +14,7 @@ public class StartPage extends BaseClass {
 	
 	public StartPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
-		// Valli Change 
+		
 	}
 	
 	@FindBy(xpath = "//button[text()='Get Started']")
@@ -42,7 +42,6 @@ public class StartPage extends BaseClass {
 	WebElement getStartedDSBtn;
 	
 	public void clickGetStartedBtn() throws Exception {
-		 Thread.sleep(2000);
 		 Loggerload.info("click on getStartedPage "+getStartedBtn.getText()+" button");
 		 Utils.webClick(getStartedBtn);
     }
