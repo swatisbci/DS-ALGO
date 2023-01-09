@@ -1,56 +1,56 @@
 # DS-ALGO
-Project Title:   
+## Project Title:   
    Data Structures and Algorithms (DS-ALGO) Project 
 
-Project Description:    
-     DS-ALGO project is an automation testing project for the website "https://dsportalapp.herokuapp.com/ ".     
+## Project Description:    
+DS-ALGO project is an automation testing project for the website "https://dsportalapp.herokuapp.com/ ".    
 The above website gives you knowledge about data structures and its types (Arrays, LinkedList, Stack, Queue, Tree, Graph) and algorithms using Python.
 
-Table of Contents:
+### Table of Contents:
 1.	Tools and Technologies
 2.	Frame Work
 3.	Running Project
 4.	Reporting
 
-Tools and Technologies used in this project:
+#### Tools and Technologies used in this project:
 
-1.	Maven      
+1.	##### Maven      
 •	Handles the entire lifecycle of the project.    
 •	Manages project dependencies.    
 •	Uses the concept of POM (Project Object Model)    
 
-2.	Java    
+2.	##### Java    
 •	Object-Oriented Programming language.    
 •	Java with Selenium execution is faster.    
 
-3.	Selenium WebDriver    
+3.	##### Selenium WebDriver    
 •	Automating web-based application testing    
 •	Testing Framework for testing UI(User Interface) of the application    
 
-4.	Cucumber    
+4.	##### Cucumber    
 •	Framework that supports Behavior Driven Development (BDD approach).   
 
-5.	TestNG   
+5.	##### TestNG   
 •	Open- Source automation testing framework for Java.    
 •	To test the unit, functional, E2E, and integration testing of the application.     
 
-6.	Log4j    
+6.	##### Log4j    
 •	Logging framework which is responsible for capturing, publishing, and formatting logging information.    
 
-7.	Allure reports    
+7.	##### Allure reports    
 •	Multi-Language test report tool.    
 
-Framework:             
+#### Framework:             
 ![image](https://user-images.githubusercontent.com/97117913/211368468-0149f553-6399-4dfe-894e-3f8e18446b64.png)
 
 
 
-Running the project:    
+#### Running the project:    
     Through Eclipse:	
       	Go to Runner.java in  src\test\java\com\runner.
         Right Click – run as – TestNG Test
 
-Features will run in order :     
+##### Features will run in order :     
 1.	1startPage.feature   
 2.	2register.feature   
 3.	3login.feature   
@@ -59,20 +59,20 @@ Features will run in order :
 6.	6linkedList.feature    
 
 
-Reporting      
+#### Reporting      
 Once tests complete run reports are generated. This framework uses different types of test reporters to communicate pass/failure.
 
-Allure Report:          
+#### Allure Report:          
 Allure Report will be generated into the temp folder. To see the report
 Go to command prompt
 	$ cd <Project Directory>
 
 	$ allure serve allure-results
 
-HTML Report:           
+#### HTML Report:           
 HTML report will be generated in the directory: 
 target/HtmlReport.html       
-Cucumber Report:        
+#### Cucumber Report:        
 	The cucumber report will be generated in the directory:
 			target/cucumber.html
 
