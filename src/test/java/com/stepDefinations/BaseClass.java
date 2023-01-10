@@ -6,6 +6,7 @@ import com.pageObjects.GraphPage;
 import com.pageObjects.LinkedListPage;
 import com.pageObjects.LoginPage;
 import com.pageObjects.RegisterPage;
+import com.pageObjects.StackPage;
 import com.pageObjects.StartPage;
 
 public class BaseClass {
@@ -14,11 +15,9 @@ public class BaseClass {
 	public LoginPage loginPage;
 	public DS_IntroPage ds_IntroPage;
 	public LinkedListPage listPage;
-	public ArraysPage arrayPage;
-//	public StackPage stackPage;
-	public GraphPage graphPage;
-	
-	
+	public ArraysPage arrayPage;	
+	public StackPage stackPage;
+  public GraphPage graphPage;
 
 		
 
