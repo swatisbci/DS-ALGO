@@ -5,6 +5,7 @@ import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
 import com.pageObjects.LoginPage;
 import com.pageObjects.RegisterPage;
+import com.pageObjects.StackPage;
 import com.pageObjects.StartPage;
 
 public class BaseClass {
@@ -14,6 +15,7 @@ public class BaseClass {
 	public DS_IntroPage ds_IntroPage;
 	public LinkedListPage listPage;
 	public ArraysPage arrayPage;
+	public StackPage stackPage;
 
 	
 	
