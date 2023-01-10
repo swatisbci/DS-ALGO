@@ -8,6 +8,7 @@ import org.testng.Assert;
 
 import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
+import com.pageObjects.StackPage;
 import com.utils.Helper;
 
 import io.cucumber.java.en.Given;
@@ -18,15 +19,20 @@ public class LinkedListStepDef extends BaseClass {
 
 WebDriver driver = Helper.getDriver();
 	
-	
-	@Given("The user is at home page with title {string}")
-	public void the_user_is_at_home_page_with_title(String title) {
-		listPage = new LinkedListPage(Helper.getDriver());		
-		Assert.assertEquals(title, Helper.getDriver().getTitle());
-	}
+		
+//	@Given("The user is at home page with title {string}")
+//	public void the_user_is_at_home_page_with_title(String title) {
+//		 listPage = new LinkedListPage(Helper.getDriver());	
+//		stackPage = new StackPage(Helper.getDriver());
+//
+//		System.out.println("title of page :"+Helper.getDriver().getTitle());
+//		Assert.assertEquals(title, Helper.getDriver().getTitle());
+//		
+//	}
 	
 	@When("user click on Get Started button in Linkedlist section")
 	public void user_click_on_get_started_button_in_linkedlist_section() {
+		listPage = new LinkedListPage(Helper.getDriver());	
 		listPage.clickGetStarted();
 	}
 
@@ -40,12 +46,12 @@ WebDriver driver = Helper.getDriver();
 		listPage.clickIntroductionLink();
 	}
 
-	@When("user clicks on Try here")
-	public void user_clicks_on_try_here() throws InterruptedException {
-		ds_IntroPage = new DS_IntroPage(Helper.getDriver());
-		ds_IntroPage.clickTryHereLink();
-
-	}
+//	@When("user clicks on Try here")
+//	public void user_clicks_on_try_here() throws InterruptedException {
+//		ds_IntroPage = new DS_IntroPage(Helper.getDriver());
+//		ds_IntroPage.clickTryHereLink();
+//
+//	}
 
 	@When("user enters the Python code")
 	public void user_enters_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
@@ -54,10 +60,10 @@ WebDriver driver = Helper.getDriver();
 		 listPage.enterCode(data.get(0).get(0));
 	}
 
-	@When("user will click on run button")
-	public void user_will_click_on_run_button() {		
-		listPage.clickRunBtn();
-	}
+//	@When("user will click on run button")
+//	public void user_will_click_on_run_button() {		
+//		listPage.clickRunBtn();
+//	}
 	
 	@Then("User navigate back to page with title {string}")
 	public void user_navigate_back_to_page_with_title(String url) {
