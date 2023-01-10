@@ -6,29 +6,16 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.pageObjects.DS_IntroPage;
 import com.pageObjects.LinkedListPage;
 import com.pageObjects.StackPage;
 import com.utils.Helper;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LinkedListStepDef extends BaseClass {
 
 WebDriver driver = Helper.getDriver();
-	
-		
-//	@Given("The user is at home page with title {string}")
-//	public void the_user_is_at_home_page_with_title(String title) {
-//		 listPage = new LinkedListPage(Helper.getDriver());	
-//		stackPage = new StackPage(Helper.getDriver());
-//
-//		System.out.println("title of page :"+Helper.getDriver().getTitle());
-//		Assert.assertEquals(title, Helper.getDriver().getTitle());
-//		
-//	}
 	
 	@When("user click on Get Started button in Linkedlist section")
 	public void user_click_on_get_started_button_in_linkedlist_section() {
@@ -46,24 +33,12 @@ WebDriver driver = Helper.getDriver();
 		listPage.clickIntroductionLink();
 	}
 
-//	@When("user clicks on Try here")
-//	public void user_clicks_on_try_here() throws InterruptedException {
-//		ds_IntroPage = new DS_IntroPage(Helper.getDriver());
-//		ds_IntroPage.clickTryHereLink();
-//
-//	}
-
-	@When("user enters the Python code")
+  @When("user enters the Python code")
 	public void user_enters_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
 		listPage=new LinkedListPage(Helper.getDriver());
 		 List<List<String>>data=pythonCode.cells();
 		 listPage.enterCode(data.get(0).get(0));
 	}
-
-//	@When("user will click on run button")
-//	public void user_will_click_on_run_button() {		
-//		listPage.clickRunBtn();
-//	}
 	
 	@Then("User navigate back to page with title {string}")
 	public void user_navigate_back_to_page_with_title(String url) {
@@ -76,12 +51,6 @@ WebDriver driver = Helper.getDriver();
 	    listPage.clickCreatingLinkedListLink();
 	}
 	
-	@Then("user will navigate to corresponding page with title {string}")
-	public void user_will_navigate_to_corresponding_page_with_title(String title) {
-		Assert.assertEquals(title, Helper.getDriver().getTitle());
-
-	}
-
 	@When("user click on Types of Linked List")
 	public void user_click_on_types_of_linked_list() {
 		listPage = new LinkedListPage(Helper.getDriver());

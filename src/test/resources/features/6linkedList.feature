@@ -23,7 +23,7 @@ Scenario: validating Linked List introduction page
  @linkedlist   
 Scenario: User validate Creating Linked List page
     When user click on Creating Linked List
-    Then user will navigate to corresponding page with title "Creating Linked LIst"
+    Then user should navigate to corresponding page with title "Creating Linked LIst"
     When user clicks on Try here
  And It should navigate to corresponding page with title "Assessment"
     When user enters the Python code
@@ -45,7 +45,7 @@ Scenario: User validate Types of Linked List page
 @linkedlist   
 Scenario: User validate Implement Linked List in Python page
     When user click on Implement Linked List in Python
-    Then user will navigate to corresponding page with title "Implement Linked List in Python"
+    Then user should navigate to corresponding page with title "Implement Linked List in Python"
     When user clicks on Try here
     And It should navigate to corresponding page with title "Assessment"
     When user enters the Python code
@@ -56,7 +56,7 @@ Scenario: User validate Implement Linked List in Python page
 @linkedlist   
 Scenario: User validate Traversal page
     When user click on Traversal link
-    Then user will navigate to corresponding page with title "Traversal"
+    Then user should navigate to corresponding page with title "Traversal"
     When user clicks on Try here
    And It should navigate to corresponding page with title "Assessment"
     When user enters the Python code
@@ -67,7 +67,7 @@ Scenario: User validate Traversal page
 @linkedlist   
 Scenario: User validate Insertion page
     When user click on Insertion link
-    Then user will navigate to corresponding page with title "Insertion"
+    Then user should navigate to corresponding page with title "Insertion"
     When user clicks on Try here
    And It should navigate to corresponding page with title "Assessment"
     When user enters the Python code
@@ -78,7 +78,7 @@ Scenario: User validate Insertion page
 @linkedlist   
 Scenario: User validate Deletion page
     When user click on Deletion link
-    Then user will navigate to corresponding page with title "Deletion"
+    Then user should navigate to corresponding page with title "Deletion"
     When user clicks on Try here
     And It should navigate to corresponding page with title "Assessment"
     When user enters the Python code

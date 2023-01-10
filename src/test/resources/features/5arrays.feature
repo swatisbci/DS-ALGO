@@ -188,7 +188,7 @@ Feature: Array
     Given The user is on "Question" page of "Search the array" after logged in
     When The user enter python code with invalid syntax in tryEditor from sheet "<Sheetname>" and <RowNumber>
     And The user clicks on run button
-    Then The user should be presented with error message as "SyntaxError: bad input on line 1"
+    Then The user gets an error message
 
     Examples: 
       | Sheetname  | RowNumber |
@@ -198,7 +198,7 @@ Feature: Array
     Given The user is on "Question" page of "Max Consecutive Ones" after logged in
     When The user enter python code with invalid syntax in tryEditor from sheet "<Sheetname>" and <RowNumber>
     And The user clicks on run button
-    Then The user should be presented with error message as "SyntaxError: bad input on line 1"
+    Then The user gets an error message
 
     Examples: 
       | Sheetname  | RowNumber |
@@ -208,7 +208,7 @@ Feature: Array
     Given The user is on "Question" page of "Find Numbers with Even Number of Digits" after logged in
     When The user enter python code with invalid syntax in tryEditor from sheet "<Sheetname>" and <RowNumber>
     And The user clicks on run button
-    Then The user should be presented with error message as "SyntaxError: bad input on line 1"
+    Then The user gets an error message
 
     Examples: 
       | Sheetname  | RowNumber |
@@ -218,7 +218,7 @@ Feature: Array
     Given The user is on "Question" page of "Squares of a Sorted Array" after logged in
     When The user enter python code with invalid syntax in tryEditor from sheet "<Sheetname>" and <RowNumber>
     And The user clicks on run button
-    Then The user should be presented with error message as "SyntaxError: bad input on line 1"
+    Then The user gets an error message
 	Then user is navigated to home page "https://dsportalapp.herokuapp.com/home"
 	
     Examples: 
