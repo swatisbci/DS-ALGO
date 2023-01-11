@@ -16,11 +16,11 @@ public class BaseClass {
 	public LoginPage loginPage;
 	public DS_IntroPage ds_IntroPage;
 	public LinkedListPage listPage;
-	public ArraysPage arrayPage;
+	public ArraysPage arrayPage;	
 	public StackPage stackPage;
 	public GraphPage graphPage;
 	public TreePage treePage;
-	
+
 
 		
 
