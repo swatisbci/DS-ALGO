@@ -6,15 +6,16 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.utils.ConfigReader;
+import com.utils.Helper;
+import com.utils.Loggerload;
+
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
-import com.utils.ConfigReader;
-import com.utils.Helper;
-import com.utils.Loggerload;
 
 public class Hooks {
 	private static WebDriver driver;
