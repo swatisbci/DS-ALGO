@@ -48,7 +48,7 @@ public class CommonStepDefs extends BaseClass {
 	@Then("It should navigate to corresponding page with title {string}")
 	public void it_should_navigate_to_corresponding_page_with_title(String title) {
 		listPage = new LinkedListPage(driver);	
-//		stackPage = new StackPage(driver);
+		//stackPage = new StackPage(driver);
 		arrayPage = new ArraysPage(driver);
 		ds_IntroPage = new DS_IntroPage(driver);
 		
