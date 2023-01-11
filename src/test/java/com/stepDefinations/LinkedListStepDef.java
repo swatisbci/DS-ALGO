@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.pageObjects.LinkedListPage;
+import com.pageObjects.StackPage;
 import com.utils.Helper;
 
 import io.cucumber.java.en.Then;
@@ -32,7 +33,7 @@ WebDriver driver = Helper.getDriver();
 		listPage.clickIntroductionLink();
 	}
 
-	@When("user enters the Python code")
+  @When("user enters the Python code")
 	public void user_enters_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
 		listPage=new LinkedListPage(Helper.getDriver());
 		 List<List<String>>data=pythonCode.cells();
