@@ -5,6 +5,7 @@ import com.pageObjects.DS_IntroPage;
 import com.pageObjects.GraphPage;
 import com.pageObjects.LinkedListPage;
 import com.pageObjects.LoginPage;
+import com.pageObjects.QueuePage;
 import com.pageObjects.RegisterPage;
 import com.pageObjects.StackPage;
 import com.pageObjects.StartPage;
@@ -20,7 +21,8 @@ public class BaseClass {
 	public StackPage stackPage;
 	public GraphPage graphPage;
 	public TreePage treePage;
-
+	public QueuePage queuePage;
+	
 
 		
 
