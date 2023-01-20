@@ -61,4 +61,10 @@ public class StackPage extends BaseClass {
 		Helper.getDriver().switchTo().alert().accept();
 		return errormsg;
 	}
+	
+	
+
+	
+	
+
 }
