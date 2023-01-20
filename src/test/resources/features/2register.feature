@@ -1,3 +1,4 @@
+@register
 Feature: Register
 
   Background: 
@@ -26,6 +27,7 @@ Feature: Register
   Scenario Outline: Register validation with invalid inputs/blank fields
     When user enters "<username>" with username and click on register button
     Then user should get fillout field error message "Please fill out this field." 
+
     
      Examples: 
       | username        | password  | passwordConfirmation |
@@ -64,6 +66,7 @@ Scenario Outline: Register validation with invalid inputs/blank fields
       | username        | password  | passwordConfirmation |
       |                 |           | abc@123              |
 
+@mismatchpwd
   Scenario Outline: Register validation with invalid inputs/ password mismatch
     When user enters "<username>" "<password>" "<passwordConfirmation>" with mismatching passwords
     Then user should get a password mismatch error message "password_mismatch:The two password fields didn’t match."
@@ -72,14 +75,15 @@ Scenario Outline: Register validation with invalid inputs/blank fields
       | username        | password  | passwordConfirmation |
       | swati@gmail.com | abcde@123 | abcd@123             |
 
+@atleasteight
   Scenario Outline: Register validation with invalid inputs/ password format less than eight characters
     When user enters "<username>" "<password>" "<passwordConfirmation>" password less than eight characters
     Then user should get password atleast eight char error message "password should contain atleast eight characters."
-
     Examples: 
       | username        | password | passwordConfirmation |
       | swati@gmail.com | abcde    | abcde                |
 
+@allnumeric
   Scenario Outline: Register validation with invalid inputs/  password format all numeric
     When user enters "<username>" "<password>" "<passwordConfirmation>" password with all numeric input
     Then user should get enter valid input error message "please enter valid password format"
@@ -88,10 +92,10 @@ Scenario Outline: Register validation with invalid inputs/blank fields
       | username        | password     | passwordConfirmation     |
       | swati@gmail.com |    123456789 |                123456789 |
 
+@compareUnPwd
   Scenario Outline: Register validation with invalid inputs/ similar fields
     When user enters the "<username>" "<password>" "<passwordConfirmation>" all similar to one another
     Then user should get password not similar to username error message "password can not be similar as username"
-
     Examples: 
       | username  | password  | passwordConfirmation |
       | swati@123 | swati@123 | swati@123            |
