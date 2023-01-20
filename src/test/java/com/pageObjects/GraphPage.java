@@ -77,6 +77,3 @@ public class GraphPage {
 		Utils.webClick(graphDropdown);
 	}
 }
-
-}
-
