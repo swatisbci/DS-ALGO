@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features="src/test/resources/features"
 ,glue ={"com.stepDefinations","com.utils.Helper", "appHooks"}
 ,monochrome=true,dryRun = false ,   
-tags = "@ds",
+
 
 plugin= {"pretty","html:target/cucumber.html",
 		"json:target/cucumber-reports/reports.json", 
