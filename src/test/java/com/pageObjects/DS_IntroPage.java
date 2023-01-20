@@ -1,20 +1,16 @@
 package com.pageObjects;
 
-import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.utils.Helper;
+import com.utils.Loggerload;
 import com.utils.Utils;
 
-public class Ds_IntroPage {
-	public Ds_IntroPage(WebDriver webDriver) {
+public class DS_IntroPage {
+	public DS_IntroPage(WebDriver webDriver) {
 		PageFactory.initElements(webDriver, this);
 	}
 	
@@ -27,38 +23,40 @@ public class Ds_IntroPage {
 	@FindBy(xpath ="//a[text()='Try here>>>']")
 	WebElement tryHereLink;
 	
-	@FindBy (xpath ="//pre[@class=' CodeMirror-line ']")
-	WebElement editor;
+	@FindBy (xpath ="//form/div/div/div/textarea")
+	WebElement textEditor; 
 	
 	@FindBy(xpath ="//button[text()='Run']")
 	WebElement runBtn;
 	
 	public void clickGetStartedDs() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ getStartedLinkDs.getText()+ " link");
 		Utils.webClick(getStartedLinkDs);
 	}
 	
 	public void clickTimeComplexityLink() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ timeComplexityLink.getText()+ " link");
 		Utils.webClick(timeComplexityLink);
 	}
 	
 	public void clickTryHereLink() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ tryHereLink.getText()+ " link");
 		Utils.webClick(tryHereLink);
 	}
 	
-	public void enterCode(String PythonCode) throws InterruptedException {
-		Thread.sleep(2000);
-		WebDriverWait driverWait = new WebDriverWait(Helper.getDriver(), Duration.ofSeconds(60));
-				driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//pre[@class=' CodeMirror-line ']")));
-		Utils.webClick(editor);
-		Utils.webSendKeys(editor, PythonCode);
-	}
+	public void enterCode(String pythonCode) throws InterruptedException {
+		Loggerload.info("Entering code on dsIntro "+ textEditor.getText()+ " text field");
+		Utils.enterPythonCode(textEditor, pythonCode);
+	} 
 	
 	public void clickRunBtn() throws InterruptedException {
 		Thread.sleep(1000);
+		Loggerload.info("Click on dsIntro "+ runBtn.getText()+ " button");
 		Utils.webClick(runBtn);
 	}
+	
 
 }
