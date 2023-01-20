@@ -1,11 +1,11 @@
 Feature: Stack
 #@stack
-# Scenario: Launch the url
+ #Scenario: Launch the url
 #	Given user open browser and launch the url "https://dsportalapp.herokuapp.com/"
-#   When user click  "Get started" button
-#   And click on signin link
-#   When user enters  "abcde12ab3@gmail.com" "pranav@12"
-#   And user click on login button
+   #When user click  "Get started" button
+   #And click on signin link
+   #When user enters  "abcde12ab3@gmail.com" "pranav@12"
+   #And user click on login button
 @stack
 Scenario: validating Stack operationsInStack  page
 		Given The user is at home page with title "NumpyNinja"
@@ -14,7 +14,7 @@ Scenario: validating Stack operationsInStack  page
     When user click on operations in stack link
     Then user should navigate to corresponding page with title "Operations in Stack"
      When user clicks on Try here
-    And It should navigate to corresponding page with title "Assessment"
+    Then user should navigate to corresponding page with title "Assessment"
     When user enter the Python code in text editor
       |print("stack Introduction")|
     And click on run button
@@ -51,7 +51,7 @@ Scenario: validating Stack operationsInStack  page
     When user click on operations in stack link
     Then user should navigate to corresponding page with title "Operations in Stack"
      When user clicks on Try here
-    And It should navigate to corresponding page with title "Assessment"
+    Then user should navigate to corresponding page with title "Assessment"
     When user enters invalid Python code in text editor
       |hello|
     And click on run button
@@ -65,14 +65,9 @@ Scenario: validating Stack operationsInStack  page
     When user click on Implementation link
     Then user should navigate to corresponding page with title "Implementation"
      When user clicks on Try here
-    And It should navigate to corresponding page with title "Assessment"
+    Then user should navigate to corresponding page with title "Assessment"
     When user enters invalid Python code in text editor
       |hello|
     And click on run button
     Then user should get error message 
-	Then User navigate back to page as title "https://dsportalapp.herokuapp.com/stack/"
-	Then user is navigated to home page "https://dsportalapp.herokuapp.com/home"
-	
-
-   
-    
+	Then User navigate back to page as title "https://dsportalapp.herokuapp.com/home"
