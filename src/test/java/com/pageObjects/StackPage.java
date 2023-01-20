@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.stepDefinations.BaseClass;
 import com.utils.Helper;
+
 import com.utils.Loggerload;
 import com.utils.Utils;
 
@@ -33,10 +34,7 @@ public class StackPage extends BaseClass {
 	
 	@FindBy(xpath ="//a[text()='Applications']")
 	WebElement ApplicationsLink;
-	
-	
-	
-	
+		
 	public void clickGetStarted() {
 		Loggerload.info("Click on stack "+ getStartedBtn.getText()+ " button");
 		Utils.webClick(getStartedBtn);
@@ -61,9 +59,6 @@ public class StackPage extends BaseClass {
 		Helper.getDriver().switchTo().alert().accept();
 		return errormsg;
 	}
-	
-	
-
 	
 	
 
