@@ -59,3 +59,6 @@ public class GraphStepDef extends BaseClass{
 		assertEquals(Title, "Practice Questions", "Title not matched");
 	}
 }
+
+}
+

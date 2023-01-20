@@ -75,9 +75,3 @@ public void user_should_get_error_message() {
 }
 
 }
-
-
-	
-
-
-

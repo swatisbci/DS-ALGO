@@ -185,5 +185,3 @@ public class Utils {
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(element));		
 	}
 }
-
-
