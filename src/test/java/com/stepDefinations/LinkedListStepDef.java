@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.pageObjects.LinkedListPage;
+import com.pageObjects.StackPage;
 import com.utils.Helper;
 
 import context.TestContext;
@@ -37,7 +38,7 @@ WebDriver driver = Helper.getDriver();
 		testContext.getListPage().clickIntroductionLink();
 	}
 
-	@When("user enters the Python code")
+  @When("user enters the Python code")
 	public void user_enters_the_python_code(io.cucumber.datatable.DataTable pythonCode) throws InterruptedException {
 		 List<List<String>>data=pythonCode.cells();
 		 testContext.getListPage().enterCode(data.get(0).get(0));

@@ -3,10 +3,10 @@ package com.stepDefinations;
 import static org.testng.Assert.assertEquals;
 
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 
 import com.utils.Helper;
+
 import com.utils.Loggerload;
 
 import context.TestContext;
@@ -20,7 +20,7 @@ public class StackStepDef {
 	public StackStepDef(TestContext testContext) {
 		this.testContext = testContext;
 	}
-	
+
 
 @When("user click on Get Started button in Stack section")
 public void user_click_on_get_started_button_in_stack_section() {
@@ -57,6 +57,7 @@ public void user_enters_invalid_python_code_in_text_editor(io.cucumber.datatable
 	 List<List<String>>data=pythonCode.cells();
 	 testContext.getListPage().enterCode(data.get(0).get(0)); 
 }
+
 @Then("user should get error message")
 public void user_should_get_error_message() {
 	String actualMsg = testContext.getStackPage().getErrormsg();
@@ -64,10 +65,9 @@ public void user_should_get_error_message() {
 	assertEquals(actualMsg,"NameError: name 'hello' is not defined on line 1", "Result do not match");
 }
 
+@Then("user should navigate to corresponding stack page with title {string}")
+public void user_should_navigate_to_corresponding_stack_page_with_title(String title) {
+	Assert.assertEquals(title, Helper.getDriver().getTitle());
 }
 
-
-	
-
-
-
+}

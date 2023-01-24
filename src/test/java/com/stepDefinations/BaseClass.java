@@ -22,8 +22,4 @@ public class BaseClass {
 	public GraphPage graphPage;
 	public TreePage treePage;
 	public QueuePage queuePage;
-	
-
-		
-
 }

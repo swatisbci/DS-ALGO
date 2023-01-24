@@ -55,7 +55,7 @@ public class ArraysStepDef {
 		List<List<String>>data=pythonCode.cells();
 		testContext.getArrayPage().enterPythonCode(data.get(0).get(0));
 	}
-		
+
 	@Then("The result should be displayed below the run button")
 	public void the_result_should_be_displayed_below_the_run_button() {
 		Allure.addAttachment("Python output", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
