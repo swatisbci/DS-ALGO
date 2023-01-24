@@ -49,20 +49,21 @@ The above website gives you knowledge about data structures and its types (Array
         Right Click – run as – TestNG Test
 
 ##### Features will run in order :     
-1.	1startPage.feature   
-2.	2register.feature   
-3.	3login.feature   
-4.	4DataStructureIntro    
-5.	5arrays.feature    
-6.	6linkedList.feature    
+1.	UC01_startPage.feature   
+2.	UC02_register.feature   
+3.	UC03_login.feature   
+4.	UC04_DataStructureIntro.feature    
+5.	UC05_arrays.feature    
+6.	UC06_linkedList.feature
+7.	UC07_stack.feature   
+8.	UC08_tree.feature   
+9.	UC09_graph.feature   
+10.	UC10_queue.feature
+
 
 
 #### Reporting      
-Once tests complete run reports are generated. This framework uses different types of test reporters to communicate pass/failure.
-
-#### TestNG   
-•	Open- Source automation testing framework for Java.    
-•	To test the unit, functional, E2E, and integration testing of the application.   
+	Once tests complete run reports are generated. This framework uses different types of test reporters to communicate pass/failure.
 
 #### Allure Report:          
 	Allure Report will be generated into the temp folder. To see the report
@@ -71,13 +72,27 @@ Once tests complete run reports are generated. This framework uses different typ
 
 	$ allure serve allure-results
 
-#### Spark Report:           
-	Spark report will be generated in the directory: 
-		test-output/DsAlgo-Spark/Index.html    
+#### ExtentReport: 
+	We have three different types of reports in ExtentReports
+	
+   	1.Spark Report: 
+   
+		Spark report will be generated in the directory: 
+		
+			test-output/DsAlgo-Spark/Index.html    
 
-#### HTML Report:           
-	HTML report will be generated in the directory: 
+  	2.HTML Report:   
+   
+		HTML report will be generated in the directory: 
+		
 		test-output/HtmlReport/ExtentHtml.html
+		
+  	3.PDF Report:    
+   
+		Pdf report will be generated in the directory:	
+		
+			test-output/PDFReport/ExtendPdf.pdf 
+			
 
 #### Cucumber Report:        
 	The cucumber report will be generated in the directory:
@@ -85,6 +100,4 @@ Once tests complete run reports are generated. This framework uses different typ
 			
 #### TestNg Report:   
 	TestNg report will be generated in the directory: 
-		test-output/PDFReport/ExtendPdf.pdf      
-
-
+		test-output/Index.html	     
